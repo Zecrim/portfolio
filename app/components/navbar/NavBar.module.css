@@ -1,0 +1,17 @@
+.navbar {
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color:aliceblue;
+}
+
+.navbar a:hover {
+    color: rgb(var(--hover-rgb));
+}

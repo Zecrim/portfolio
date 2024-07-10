@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -8,8 +9,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 48, 50, 61;
-    --background-end-rgb: 48, 50, 61;
+    --background-start-rgb: 51, 51, 51;
+    --background-end-rgb: 51, 51, 51;
     --hover-rgb: 232, 197, 71;
   }
 }
@@ -22,10 +23,29 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+main {
+  flex: 1;
+}
+
+.title {
+  font-family: 'Press Start 2P', system-ui, sans-serif ;
+  text-align: center;
 }

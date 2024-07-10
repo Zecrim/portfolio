@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.typingText {
+    font-family: 'Roboto Mono', monospace;
+    white-space: pre;
+    overflow: hidden;
+    border-right: 0.15em solid black;
+    animation: blink-caret 0.75s step-end infinite;
+    font-size: 3rem;
+    font-weight: 450;
+    padding-top: 10vh;
+    padding-left: 1vw;
+    text-wrap: wrap;
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }
+  

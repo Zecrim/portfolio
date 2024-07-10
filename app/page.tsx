@@ -1,11 +1,9 @@
-import Image from "next/image";
-import Link from "next/link";
-import NavBar from "./components/navbar/NavBar";
+import TypingText from "./components/typingtext/TypingText";
 
 export default function Home() {
   return (
     <>
-    <h1>Hi! My name is Sam, welcome to my portfolio.</h1>
+      <TypingText text="Hii! My name is Sam, welcome to my portfolio." />
     </>
   );
 }

@@ -1,20 +1,18 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import styles from './TypingText.module.css';
-
-interface TypingTextProps {
-  text: string;
-}
 
 const TypingText = (props) => {
   const [displayedText, setDisplayedText] = useState('');
+  const textRef = useRef('');
 
   useEffect(() => {
     let index = 0;
     const interval = setInterval(() => {
       if (index < props.text.length) {
-        setDisplayedText((prev) => prev + props.text.charAt(index));
+        textRef.current += props.text.charAt(index);
+        setDisplayedText(textRef.current);
         index++;
       } else {
         clearInterval(interval);

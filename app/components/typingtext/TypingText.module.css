@@ -5,20 +5,22 @@
     white-space: pre;
     overflow: hidden;
     border-right: 0.15em solid black;
-    animation: blink-caret 0.75s step-end infinite;
+    animation: blink-caret 1s step-end infinite;
     font-size: 3rem;
     font-weight: 450;
-    padding-top: 10vh;
-    padding-left: 1vw;
-    text-wrap: wrap;
-  }
-  
-  @keyframes blink-caret {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 3rem; /* Fixed height for the container */
+    line-height: 3rem; /* Match line height to container height */
+}
+
+@keyframes blink-caret {
     from, to {
-      border-color: transparent;
+        border-color: transparent;
     }
     50% {
-      border-color: black;
+        border-color: black;
     }
-  }
-  
+}

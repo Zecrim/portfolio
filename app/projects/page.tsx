@@ -11,7 +11,7 @@ const Projects = () => {
     return(
         <>
             <h1 className='title'>Projects</h1>
-            <main className={styles.list}>
+            <main className={`${styles.list} fadeIn`}>
                 <Link href={'https://chef-book-7e05b256961b.herokuapp.com/'} target="_blank" rel="noopener noreferrer" className={styles.project}>Chef Book
                     <Image src={chef} alt="The Chef Book logo" width={256} className='image'/>
                 </Link>

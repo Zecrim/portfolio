@@ -14,9 +14,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "next": "14.2.4",
     "react": "^18",
-    "react-dom": "^18"
-  },
-  "devDependencies": {
+    "react-dom": "^18",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -24,5 +22,9 @@
     "eslint-config-next": "14.2.4",
     "postcss": "^8",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": "20.x",
+    "npm": "10.8.1"
   }
 }

@@ -8,6 +8,8 @@
 }
 
 .navbar a {
+    font-family: 'Jersey 15';
+    font-size: 1.7em;
     text-decoration: none;
     color:aliceblue;
 }

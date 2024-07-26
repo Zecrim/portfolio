@@ -1,19 +1,31 @@
 /* Footer Styles */
 .footer {
   color: white;
-  padding: 20px 0;
+  padding: 20px;
   text-align: center;
   margin-top: auto;
-  background-color: #333; 
+  background-color: #333;
+}
+
+.footerHome {
+  background-color: rgb(var(--background-rgb));
+}
+
+.footerAbout {
+  background-color: #141414;
+}
+
+.footerProjects {
+  background-color: rgb(var(--background-rgb));
 }
 
 .footerContent {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .footerContent h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
 
@@ -26,22 +38,30 @@
   padding: 0;
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 
 .footerContent .socials li {
   display: inline-block;
-  margin: 0 10px;
 }
 
 .footerContent .socials li a {
   color: white;
   text-decoration: none;
   font-size: 2em;
+  transition: transform 0.2s ease;
+}
+
+.socialGit:hover,
+.socialLink:hover {
+  transform: translateY(-10%);
+  transition: transform 0.2s ease;
+
 }
 
 .footerBottom {
-  background-color: #222;
-  padding: 10px 0;
+  background-color: #1e1f20;
+  padding: 10px;
 }
 
 .footerBottom p {
@@ -51,11 +71,11 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
   .footerContent h3 {
-    font-size: 1.5em;
+    font-size: 1.2em; 
   }
 
   .footerContent p {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   .footerContent .socials li a {

@@ -4,6 +4,8 @@
   }
   
   .list {
+    font-family: 'Jersey 15';
+    font-size: 1.5em;
     display: flex;
     overflow-x: auto;
     gap: 2rem;

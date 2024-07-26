@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 .typingText {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Press Start 2P', system-ui, sans-serif;
     white-space: pre;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-right: 0.15em solid black;
     animation: blink-caret 1s step-end infinite;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 450;
     position: absolute;
     top: 50%;

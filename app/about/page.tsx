@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 import styles from './About.module.css'
 import TypingText from "../components/typingtext/TypingText";
 
@@ -33,9 +34,9 @@ const About = () => {
                     I’m always open to new opportunities and collaborations. If you have a project in mind, want to discuss tech, or simply want to say hello, feel free to reach out!
                 </p>
                 <ul className={styles.list}>
-                    <li>Email: [Your Email]</li>
-                    <li>LinkedIn: [Your LinkedIn Profile]</li>
-                    <li>GitHub: [Your GitHub Profile]</li>
+                    <li>Email: samuel.thomas424@gmail.com</li>
+                    <li>LinkedIn: <Link href={'https://www.linkedin.com/in/samuel-thomas-3690a721b/'}  target="_blank" rel="noopener noreferrer">Sam's LinkedIn</Link></li>
+                    <li>GitHub: <Link href={'https://github.com/Zecrim'}  target="_blank" rel="noopener noreferrer">Sam's Github</Link></li>
                 </ul>
                 <p className={styles.text}>
                     Thank you for visiting my portfolio. I look forward to connecting with you!

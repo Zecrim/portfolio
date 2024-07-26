@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './About.module.css';
-import TypingText from "../components/typingtext/TypingText";
 
 const About = () => {
     return (

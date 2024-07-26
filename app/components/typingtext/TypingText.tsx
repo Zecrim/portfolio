@@ -3,7 +3,11 @@
 import React, { useEffect, useState, useRef } from 'react';
 import styles from './TypingText.module.css';
 
-const TypingText = (props) => {
+interface TypingTextProps {
+  text: string;
+}
+
+const TypingText: React.FC<TypingTextProps> = (props) => {
   const [displayedText, setDisplayedText] = useState('');
   const textRef = useRef('');
 
